@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login System</title>
+    <!-- ========== Font Awesome Library ========== -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- ========== Font Awesome Library ========== -->
+    <!-- ========== Start BOOTSTRAP CSS LINK ========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- ========== End BOOTSTRAP CSS LINK ========== -->
+    <!-- ========== MAIN CSS ========== -->
+    <link rel="stylesheet" href="./css/sign-up.css" />
+    <!-- ========== MAIN CSS ========== -->
+  </head>
+  <body>
+    <section
+      id="login"
+      class="login min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <div class="login-card text-center py-3">
+          <h1 class="text-center text-white">Smart Login System</h1>
+
+          <div class="forms-inputs">
+            <input
+              class="form-control w-50 m-2 mx-auto"
+              id="nameInput"
+              type="text"
+              name="Name"
+              placeholder="Enter your Name"
+            />
+          </div>
+
+          <div class="forms-inputs">
+            <input
+              class="form-control w-50 m-2 mx-auto"
+              id="emailInput"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="forms-inputs">
+            <input
+              class="form-control w-50 m-2 mx-auto"
+              id="passwordInput"
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="message text-center" id="message"></div>
+
+          <button href="#" onclick="add()" class="btn btn-outline-info w-50">Sign Up</button>
+          <p class="h6 text-white py-2">
+            You have an account?
+            <a href="../Login/login.html" class="btn btn-primary">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Start BOOTSTRAP LINK JS ========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- ========== End BOOTSTRAP LINK JS ========== -->
+    <!-- ========== Start Main js ========== -->
+    <script src="./js/sign-up.js"></script>
+    <!-- ========== End Main js ========== -->
+  </body>
+</html>
