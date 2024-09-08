@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- ========== GOOGLE FONTS ========== -->
+
+    <!-- ========== GOOGLE FONTS ========== -->
+
+    <!-- ========== FONTAWESOME LIBRARY ========== -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- ========== FONTAWESOME LIBRARY ========== -->
+    <!-- ========== CSS BOOTSTRAP ========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- ========== CSS BOOTSTRAP ========== -->
+
+    <!-- ========== MAIN CSS FOR STYLING ========== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ========== MAIN CSS FOR STYLING ========== -->
+  </head>
+  <body>
+    <section
+      id="login"
+      class="login min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <div class="login-card text-center w-75 mx-auto py-5">
+          <h1 class="text-center text-white">Smart Login System</h1>
+
+          <div class="forms-inputs mb-3">
+            <input
+              class="form-control m-2 w-75 mx-auto"
+              id="loginEmailInput"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <p class="text-danger d-none" id="userEmailAlert">
+              name@example.com
+            </p>
+          </div>
+
+          <div class="forms-inputs mb-3">
+            <input
+              class="form-control m-2 w-75 mx-auto"
+              id="loginPasswordInput"
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+            <p class="text-danger d-none" id="userPasswordAlert">
+              Invalid password. Please enter a password between 5 and 15
+              characters.
+            </p>
+          </div>
+
+          <p class="message text-center fs-5 text-capitalize" id="message"></p>
+
+          <button
+            onclick="login()"
+            class="btn btn-outline-primary text-white w-50"
+          >
+            Login
+          </button>
+
+          <p class="h6 text-white py-2">
+            don't have an account?
+            <a href="./signUp.html">Sign Up</a>
+          </p>
+
+          <!-- <div>
+            <a class="btn btn-outline-primary d-none" id="signInBtn" href="#">Sign In</a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== JS BOOTSTRAP ========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- ========== JS BOOTSTRAP ========== -->
+
+    <!-- ========== MAIN JS ========== -->
+    <script src="./js/index.js"></script>
+
+    <!-- ========== MAIN JS ========== -->
+  </body>
+</html>
